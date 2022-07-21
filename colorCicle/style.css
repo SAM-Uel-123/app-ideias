@@ -1,0 +1,41 @@
+
+body {
+    background-color: black;
+    animation: cores 10s infinite;
+}
+
+@keyframes cores {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: gray;
+    }
+    20% {
+        background-color: blue;
+    }
+    30% {
+        background-color: blueviolet;
+    }
+    40% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: red;
+    }
+    60% {
+        background-color: rebeccapurple;
+    }
+    70% {
+        background-color: yellowgreen;
+    }
+    80% {
+        background-color: brown;
+    }
+    90% {
+        background-color: crimson;
+    }
+    100% {
+        background-color: white;
+    }
+}

@@ -1,0 +1,194 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --bg1: rgb(33, 33, 33);
+    --bg2: rgb(65, 65, 65);
+    --mainBG: gray;
+}
+
+
+body {
+    background-color: var(--bg2);
+    height: 90vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.393);
+    color: aliceblue;
+}
+
+main {
+    height: 91vh;
+}
+
+#alarmBody {
+    background-color: var(--mainBG);
+    display: block;
+    position: relative;
+    max-width: 900px;
+    max-height: 500px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#alarm {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    max-width: 1000px;
+    
+    margin: auto;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+#daysCount, #hourCount {
+    position: relative;
+    left: 20px;
+}
+
+#minCount, #secCount {
+    position: relative;
+    left: 40px;
+}
+
+/* Divs of alarm */
+
+#daysDiv, #hourDiv, #minDiv, #secDiv {
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+/* Labels of alarm*/
+
+#daysLabel, #hourLabel, #minLabel, #secLabel {
+    display: inline-block;
+    position: relative;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 40px;
+    font-size: 1ch;
+}
+
+#daysLabel {
+    margin-left: -10px;    
+    left: -30px;
+}
+
+#hourLabel {
+    margin-left: -10px;
+    left: -40px;
+}
+
+#minLabel {
+    margin-left: -10px;
+    left: -40px;
+}
+
+#secLabel {
+    margin-left: -10px;
+    left: -40px;
+}
+
+#dp1, #dp2, #dp3 {
+    display: inline-block;
+    position: relative;
+    left: -25px;
+    width: 0px;
+    height: 2px;
+}
+
+#dp2 {
+    left: -30px;
+}
+
+#dp3 {
+    left: -35px;
+}
+
+/* Controls of alarm */
+
+#controls {
+    margin-top: 80px;
+
+}
+
+#date-for {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: -20px;
+}
+
+
+#controlsL {
+    display: block;
+    position: relative;
+    max-width: 50vw;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 20px
+
+}
+
+#controlsL > div{
+    width: 100px;
+    margin: auto;
+}
+
+#controlsL > div > button {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+}
+
+
+#dataL {
+    display: block;
+    position: relative;
+    background-color: var(--mainBG);
+    color: white;
+    width: 100px;
+    height: 20px;
+    top: -110px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    
+}
+
+#dispertarLabel {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    position: relative;
+    color: white;
+    width: 100%;
+    padding: auto;
+    height: 6vh;
+    text-align: center;
+    font-size: 0.9rem;
+
+}
+

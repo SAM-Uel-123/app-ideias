@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollars 2 Cents</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1> Dollar 2 Cents</h1>
+    </header>
+    <main>
+        <div id="d1">
+            <label id="dollarLabel"> Dollar(s) </label> <br>
+            <input id="dollarInput" type="text"> 
+        </div>
+        <hr>
+        <br>
+        <div id="d2">
+            <label id="labelCents"   > Cents          </label> <br>
+            <label id="quartersLabel"> Quarters: 0    </label>
+            <label id="dimesLabel"   > Dimes:    0    </label> <br>
+            <labeL id="nickelsLabel" > Nickels:  0    </labeL> 
+            <label id="penniesLabel" > Pennies:  0    </label>
+        </div>
+        <button id="converter-btn" onclick="calcularCents(document.getElementById('dollarInput').value)"> converter</button>
+    </main>
+    
+    <footer>
+        <p> Website made for a challenge from this repository <a href="https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Dollars-To-Cents-App.md">app-ideia</a></p>
+    </footer>
+    <script src="js.js"> </script>
+</body>
+</html>

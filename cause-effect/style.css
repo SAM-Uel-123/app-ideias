@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;    
+    
+}
+
+body {
+    background-color: rgb(73, 73, 73);
+    width: 97vw;
+    height: 97vh;
+    
+}
+
+header > h1 {
+    margin-left: 20px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479);
+
+}
+
+section {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    max-height: 525px;
+}
+
+#options {
+    display: inline-block;
+    position: relative;
+    max-width: 350px;
+    min-width: 100px;
+    max-height: 600px;
+    min-height: 385px;
+    top: 10px;
+    left: 5%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+
+#options > h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#lista {
+    padding: 10px;
+    max-width: 300px;
+    border: none;
+}
+
+#lista > option:checked {
+    font-size: 2em;
+}
+
+#lista > option {
+    border: 1px solid black;
+    padding: 5px;
+    max-width: 250px;
+
+}
+
+div#infos {
+    display:  inline-block;
+    position: absolute;
+    max-width: 250px;
+    max-height: 460px;
+    margin-left: 20px;
+
+    padding: 20px;
+    top: 8%;
+    left: 40%;
+    border: 2px solid black;
+    background-color: white;
+    
+}
+
+div#infos > picture {
+    display: block;
+    margin: auto;
+
+}
+
+#infos > p {
+    border: 1px solid black;
+    padding: 5px;
+    height: 20px;
+    max-height: 40px;
+}
+
+#infoname {
+    max-width: 200px;
+   
+    
+}
+
+#infobirday {
+    max-width: 20px;
+    
+}

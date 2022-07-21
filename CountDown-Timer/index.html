@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CountDown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Timer </h1>
+    </header>
+    <main>
+        <div id="alarmBody">
+            <div id="alarm">
+                <div id="daysDiv">
+                    <label  id="daysCount"> 00 </label>
+                    <label  id="daysLabel"> Dias</label>
+                    <label id="dp1"> : </label>
+                </div>
+                <div id="hourDiv">
+                    <label id="hourCount"> 00 </label>
+                    <label id="hourLabel"> Horas </label>
+                    <label id="dp2"> : </label>
+                </div>
+                <div id="minDiv">
+                    <label id="minCount" > 00 </label>
+                    <label id="minLabel"> Minutos </label>
+                    <label id="dp3"> : </label>
+                </div>
+                <div id="secDiv">
+                    <label id="secCount" > 00 </label>
+                    <label id="secLabel"> Segundos </label>
+                </div>
+            </div>
+            <div id="controls">
+                <label id="controlsL">
+                    <div>
+                        <input id="date-for" type="date">
+                        <button onclick="startB()"> Start</button>
+                        <button onclick="stopB()"> stop</button>
+                    </div>
+                </label>
+                <label id="dataL"> Data </label>
+                <label id="dispertarLabel"></label>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p> Exercicio criado por desafio, do repositorio <a href="https://github.com/florinpop17/app-ideas/blob/master/Projects/" target="_blank">"App-Ideas"</a></p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>

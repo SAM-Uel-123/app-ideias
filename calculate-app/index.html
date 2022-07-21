@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculate App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Calculator</h1>
+    </header>
+
+    <table id="layout">
+        <thead  id="result">
+            <tr>
+                <td><p id="old_value"></p></td>
+            </tr>
+            <tr>
+                <td><input id="number_inputs" maxlength="8" value="" type="text"></td>
+            </tr>
+        </thead>
+        <tbody id="teclado">
+            <tr class="number_keyboard_layout">
+                <td><button class="numbers" id="b7" value="7"> 7 </button></td>
+                <td><button class="numbers" id="b8" value="8"> 8 </button></td>
+                <td> <button class="numbers" id="b9" value="9"> 9 </button> </td>
+                <td><button class="functions" id="clear" onclick="clean()"> AC </button></td>
+                
+            </tr>
+            <tr class="number_keyboard_layout">
+                <td><button class="numbers" id="b4" value="4"> 4 </button></td>
+                <td><button class="numbers" id="b5" value="5"> 5 </button></td>
+                <td><button class="numbers" id="b6" value="6"> 6 </button></td>
+                <td><button class="operators" id="sum" onclick="operador('+')"> + </button></td>
+            </tr>
+            <tr class="number_keyboard_layout">
+                <td><button class="numbers" id="b1" value="1"> 1 </button></td>
+                <td><button class="numbers" id="b2" value="2"> 2 </button></td>
+                <td><button class="numbers" id="b3" value="3"> 3 </button></td>
+                <td><button class="operators" id="subtract" onclick="operador('-')"> - </button></td>
+            </tr>
+            <tr class="number_keyboard_layout">
+                <td><button class="numbers" id="b0" value="0"> 0 </button></td>
+                <td><button class="numbers" id="bp" onclick="floatNumber()"> . </button></td>
+                <td><button class="operators" id="multiply" onclick="operador('*')"> X </button></td>
+                <td><button class="operators" id="division" onclick="operador('/')"> / </button></td>
+            </tr>
+            <tr>
+                <td> <button class="functions" id="calculate" onclick="calcular(document.getElementById('number_inputs').value)"> = </button></td>
+                <td><button class="functions" id="delete" onclick="backespace()"> C </button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>

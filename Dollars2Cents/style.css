@@ -1,0 +1,124 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+html, body {
+    background-color: rgb(103, 103, 182);
+    height: 80vh;
+    max-width: 99vw;
+}
+
+header > h1 {
+    margin-top: 10vh;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.409);
+    font-size: 3vmax;
+}
+
+main {
+    display: inline-flexbox;
+    margin: 10vh 0px 34vh 0px;
+    min-height: 200px;
+    max-height: 40.4vh;
+    max-width: 99vw;
+    min-width: 400px;
+    
+}
+
+
+
+#d1, #d2 {
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 2.5vmax;
+}
+
+#d1 {
+    padding:  1vh 0px 1vh 50px;
+    margin: auto;
+}
+
+
+#d2 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+    text-indent: 10px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+#quartersLabel, #dimesLabel, #nickelsLabel, #penniesLabel  {
+    text-align: left;
+    margin-left: 50px;
+    
+}
+
+#dollarLabel {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#dollarInput {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    max-height: 50px;
+    text-align: right;
+    font-size: 3vmax;
+}
+
+#labelCents {
+    text-indent: 0px;
+}
+
+#converter-btn {
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 12px;
+    max-width: 300px;
+    max-height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+
+    border-radius: 50px;
+    font-size: 3vmax;
+    top: 30px;
+}
+
+
+footer{
+    display: block;
+    width: 98vw;
+    padding: 5px;
+    background-color: blue;
+    
+}
+
+
+footer > p {
+    display: block;
+    color: white;
+    text-align: center;
+    
+}
+
+footer > p > a {
+    color: rgb(217, 217, 217);
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    color: rgb(169, 169, 169);
+    text-decoration: underline;
+}
+
+

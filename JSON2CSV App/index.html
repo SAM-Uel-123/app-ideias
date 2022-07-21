@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSV2JSON</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1> JSON 2 CSV</h1>
+    </header>
+    <main>
+        <div id="entrada" contenteditable="true">
+            [{"id": "1", "userName": "Name1"}, <br>
+            {"id": "2", "userName": "Name2"}, <br>
+            {"id": "3", "userName": "Name3"}] <br>
+            
+        </div>
+        <div id="divResultado">
+            <div id="resultado" contenteditable="false"> </div>
+        </div>
+        <button onclick="converterJSONforCSV(document.getElementById('entrada').innerText)"> Converter </button>
+    </main>
+    <footer>
+        <p> App made for a challenge i participated</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
