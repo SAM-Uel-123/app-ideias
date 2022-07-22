@@ -3,6 +3,7 @@ dimesLabel = document.getElementById('dimesLabel')
 nickelsLabel = document.getElementById('nickelsLabel')
 penniesLabel = document.getElementById('penniesLabel')
 dollarInput = document.getElementById('dollarInput')
+
 dollarInput.addEventListener('keypress', (event) => {
     if (event.keyCode == 13) {
         calcularCents(dollarInput.value)

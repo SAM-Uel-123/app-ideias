@@ -97,10 +97,11 @@ main {
 
 footer{
     display: block;
+    position: relative;
     width: 98vw;
     padding: 5px;
     background-color: blue;
-    
+    top: 40px;
 }
 
 
