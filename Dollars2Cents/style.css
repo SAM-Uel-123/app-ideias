@@ -70,8 +70,11 @@ main {
     margin: auto;
     max-width: 200px;
     max-height: 50px;
+    border-radius: 50px;
     text-align: right;
     font-size: 3vmax;
+    padding: 10px;
+    
 }
 
 #labelCents {
