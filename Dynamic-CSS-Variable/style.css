@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+:root {
+    --alert-color-empty: lightyellow;
+    --alert-color-user-error-credentials: lightred;
+    --background-color-default: gray;
+    --color-font: white;
+}
+
+body {
+    background-color: var(--background-color-default);
+}
+
+header {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: var(--color-font);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.415);
+}
+
+label {
+    display: block;
+    color: var(--color-font);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.546);
+    text-align: center;
+    margin: auto;
+}
+
+input {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#buttons {
+    min-width: 80px;
+    max-width: 137px;
+    width: 127px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#cancelBTN {
+    padding: 10px;
+}
+
+#loginBTN {
+    padding: 10px;
+}
