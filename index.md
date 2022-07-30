@@ -8,3 +8,4 @@
 [Cause Effect](https://sam-uel-123.github.io/app-ideias/cause-effect) <br>
 [Christmas Lights App](https://sam-uel-123.github.io/app-ideias/christmas-lights-app) <br>
 [Color Cicle](https://sam-uel-123.github.io/app-ideias/colorCicle) <br>
+[Dynamic-CSS-Variable](https://sam-uel-123.github.io/app-ideias/) <br>
