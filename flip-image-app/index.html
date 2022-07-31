@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flip image app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="imagemUrlDiv">
+            <label> URL Imagem: </label><input id="inputURLImagem" type="text" value=""> 
+            <button onclick="exibirImagem(document.getElementById('inputURLImagem').value)"> Exibir imagem</button>
+        </div>
+        <div id="imagensTests">
+            <img id='imageTestOriginal' src="https://t.ctcdn.com.br/P7-_JvQTS4U7-if6zHyXjyMiNQ8=/400x400/smart/i606944.png">
+            <p> Original </p>
+            <img id='imageTest' src="https://t.ctcdn.com.br/P7-_JvQTS4U7-if6zHyXjyMiNQ8=/400x400/smart/i606944.png">
+            <p> Modificada</p>
+        </div>
+        <div id="controlsBTNs">
+            <button onclick="rotationUp()"> ↑  </button>
+            <button onclick="rotationDown()"> ↓ </button>
+            <button onclick="rotationLeft()"> ← </button> 
+            <button onclick="rotationRight()"> → </button>
+        </div>
+    </main>
+    <script src="js.js"> </script>
+</body>
+</html>
