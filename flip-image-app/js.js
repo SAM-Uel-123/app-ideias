@@ -1,7 +1,8 @@
 var imageArq = document.getElementById('imageTest')
 var imageArqOriginal =  document.getElementById('imageTestOriginal')
-var x = 1
-var y = 1
+var angulo = 1
+var X = 1
+var Y = 1
 
 function exibirImagem(url) {
     url = url.trim()
@@ -24,33 +25,59 @@ function exibirImagem(url) {
 }
 
 
-function rotation(imageElement = imageArq, X = 1, Y = 1) {
-    imageElement.style.transform = `scaleX(${x}) scaleY(${y})`
+function inverter(imageElement = imageArq, x = X, y = Y, Angulo = angulo) {
+    imageElement.style.transform = `rotate(${Angulo}deg) scaleX(${x}) scaleY(${y})`
 }
 
 
-function rotationUp(imageElement = imageArq) {
-    y = 1
-    rotation(imageElement, x, y)
+function inverterUp(imageElement = imageArq) {
+    Y = 1
+    inverter(imageElement, X, Y)
 }
 
 
-function rotationDown(imageElement = imageArq) {
-    y = -1
-    rotation(imageElement, x, y)
+function inverterDown(imageElement = imageArq) {
+    Y = -1
+    inverter(imageElement, X, Y)
+}
+
+
+
+function inverterLeft(imageElement = imageArq) {
+    X = -1
+    inverter(imageElement, X, Y)
+}
+
+
+function inverterRight(imageElement = imageArq) {
+    X = 1
+    inverter(imageElement, X, Y)
+}
+
+
+
+function rotation(imageElement = imageArq, Angulo = angulo, x = X, y = Y) {
+    imageElement.style.transform = ` rotate(${Angulo}deg) scaleX(${x}) scaleY(${y})`
 }
 
 
 function rotationLeft(imageElement = imageArq) {
-    x = -1
-    rotation(imageElement, x, y)
+    if (angulo > -360) {
+        angulo -= 1
+        rotation(imageElement, angulo)
+    }
+
 }
 
 
 function rotationRight(imageElement = imageArq) {
-    x = 1
-    rotation(imageElement, x, y)
+    if (angulo < 360) {
+        angulo += 1
+        rotation(imageElement, angulo)
+    }
 }
+
+
 
 var controlsBTNs = document.getElementById('controlsBTNs').childNodes
 var upBTN = controlsBTNs[0]
